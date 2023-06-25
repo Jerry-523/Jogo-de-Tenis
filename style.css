@@ -1,0 +1,88 @@
+ #quadra-de-tenis {
+  width:700px;
+  height:400px;
+  background-color:#32a852;
+  position:relative;
+  margin: 0 auto;
+}
+
+#linha-do-meio {
+  width: 2px;
+  height: 396px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: dashed;
+  border-width: 2px;
+}
+
+#jogador1 {
+  width:20px;
+  height: 80px;
+  background-color: blue;
+  position: absolute;
+  top:110px;
+}
+#jogador2 {
+  width:20px;
+  height: 80px;
+  background-color: blueviolet;
+  position: absolute;
+  top:110px;
+}
+
+#jogador1{
+  left:20px;
+}
+
+#jogador2{
+  right:20px;
+}
+
+#bola{
+  width: 25px;
+  height: 25px;
+  background-color: #ff0000;
+  position: absolute;
+  top: 180px;
+  left:350px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#pontuação {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px;
+  /*margin-bottom: 10px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;*/
+}
+
+.m {
+  color: blue;
+}
+
+.s {
+  color: blueviolet;
+}
+
+
+#jogador1-pontuacao, #jogador2-pontuacao {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}

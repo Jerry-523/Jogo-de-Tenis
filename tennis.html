@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Tenis</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1> Jogo de Tênis</h1>
+
+    <div id="pontuacao">
+      <div id="jogador1-pontuacao" class="m">
+        Jogador1: <span id="pontos-jogador1">0</span>
+      </div>
+      <div id="jogador2-pontuacao" class="s">
+        Jogador2: <span id="pontos-jogador2">0</span>
+      </div>
+    </div>
+
+    <div id="quadra-de-tenis">
+      <div id="linha-do-meio"></div>
+      <div id="jogador1"></div>
+      <div id="jogador2"></div>
+      <div id="bola"></div>
+
+    </div>
+  </div>
+
+   <script src="game.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+   <script>
+  const socket = io('http://localhost:8080');
+
+  // Função para enviar dados para o servidor
+  function enviarDadosParaServidor(dados) {
+    socket.emit('mensagem', dados);
+  }
+
+  // Receber dados do servidor
+  socket.on('dados', function (dados) {
+    // Aqui você atualiza a interface do jogo com base nos dados recebidos
+    console.log('Dados recebidos do servidor:', dados);
+  });
+</script>
+
+</body>
+</html>
+           
