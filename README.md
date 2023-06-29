@@ -4,7 +4,7 @@ Este é um jogo de tênis simples desenvolvido em JavaScript, com suporte a mult
 
 ## Funcionalidades
 
-- **Jogador vs. Jogador:** Desafie outros jogadores para uma partida de tênis online.
+- **Jogador1 vs. Jogador2:** Desafie outros jogadores para uma partida de tênis online.
 - **Movimentação de Raquete:** Use as setas do teclado para mover a raquete e rebater a bola.
 - **Sistema de Pontuação:** Acompanhe a pontuação de cada jogador durante a partida.
 - **Sincronização em Tempo Real:** O uso de WebSockets permite que os jogadores vejam a bola e a raquete do oponente se movendo em tempo real.
